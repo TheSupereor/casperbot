@@ -3,7 +3,8 @@ let token = sessionStorage.getItem('token')
 //console.log(token)
 if(!token){
 	alert('Usuário não autenticado, redirecionando')
-	location.href = 'http://localhost:5500/casperbot/pages/Auth/login.html'
+	// -------------------- rodando em um live server local ----------------
+	location.href = `http://localhost:5500/casperbot/pages/Auth/login.html`
 }
 
 

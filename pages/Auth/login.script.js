@@ -23,6 +23,7 @@ async function Login(e){
         //salvando o token
         sessionStorage.setItem('token', result.data);
         alert('Usuário logado!');
+	    // -------------------- rodando em um live server local ----------------
 		location.href = 'http://localhost:5500/casperbot/pages/News/news.html'
     }else{
         alert(result.error)
