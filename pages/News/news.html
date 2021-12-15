@@ -1,0 +1,241 @@
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Portal de Noticias</title>
+  </head>
+
+  <style>
+      body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Helvetica, sans-serif;
+      }
+
+      #title{
+        margin: 100px 0 20px 50px;
+      }
+
+      .noticias{
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        background-color: antiquewhite;
+        border-collapse: collapse;
+        margin-left: 50px;
+        max-width: 80vw;
+				table-layout: fixed;
+      }
+
+			thead, tbody{
+				padding: 10px;
+			}
+
+      .noticias thead th{
+        border-bottom: 1px solid darkorange;
+        padding: 20px;
+      }
+
+			th, td{
+				max-width: 20vw;
+				min-width: 10vw;
+        padding: 8px 10px;
+			}
+
+      th{
+        font-weight: bold;
+      }
+
+      td{
+        text-align: center;
+				word-break: break-all;
+      }
+
+      #adNoticia{
+          width: 50px;
+          height: 50px;
+					border: none;
+          border-radius: 50%;
+          background-color: rgb(0, 153, 255);
+          font-size: 30px;
+          font-weight: bold;
+          color: white;
+          cursor: pointer;
+
+          position: fixed;
+          bottom: 5vh;
+          right: 5vw;
+      }
+
+      .SimpleButton{
+        display: block;
+        background-color: transparent;
+        padding: 8px 14px;
+        margin: 10px auto;
+        border: 2px double goldenrod;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .SimpleButton:hover{
+        background-color: burlywood;
+        color: white;
+      }
+
+      .modal{
+          display: none;
+          position: fixed;
+          z-index: 1;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #000;
+          background-color: (0,0,0, 0.3);
+        }
+      
+			.modal-content{
+				background-color: whitesmoke;
+				margin: 20px auto;
+				padding: 20px;
+				width: 70%;
+				border-radius: 20px;
+
+			}
+
+			.modal-content form{
+				width: 100%;
+			}
+		
+			.close-button{
+				font-weight: bold;
+				color: grey;
+				float: right;
+				cursor: pointer;
+			}
+
+			input{
+				margin: 10px;
+				padding: 10px 5px;
+				border-radius: 5px;
+				display: block;
+				width: 80%;
+			}
+
+      select{
+        margin: 10px;
+				padding: 10px 5px;
+				border-radius: 5px;
+				display: block;
+				width: 80%;
+      }
+
+			input[type=submit]{
+				margin: 20px auto;
+				padding: 10px 18px;
+				border: 1px solid darkgrey;
+				width: auto;
+				cursor: pointer;
+				transition-duration: 0.3s;
+			}
+
+			input[type=submit]:hover{
+				background-color: darkgrey;
+			}
+
+  </style>
+
+  <body>
+    <h1 id="title">Notícias</h1>
+
+    <table class="noticias">
+        <thead>
+            <tr>
+                <th>Imagem</th>
+                <th>Título</th>
+                <th>Descrição</th>
+                <th>Tema</th>
+                <th>Link</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="listaNoticias">
+            
+        </tbody>
+    </table>
+
+    <button id="adNoticia">+</button>
+
+    <!-- Modal Criação -->
+
+    <div id="modalAdd" class="modal">
+
+        <div class="modal-content">
+            <form id="Newsform-add">
+								<span id="close-button-add" class="close-button">X</span>
+
+                <label>Link da imagem</label>
+								<input type="text" name="image" id="news-image">
+                
+								<label>Titulo</label>
+								<input type="text" name="title" id="news-title">
+                
+								<label>Descrição</label>
+								<input type="text" name="desc" id="news-desc">
+                
+								<label>Tema</label>
+                <select id="news-theme">
+                  <option value="Esportes" selected>Esportes</option>
+                  <option value="Politica">Política</option>
+                  <option value="Entretenimento">Entretenimento</option>
+                  <option value="Famosos">Famosos</option>
+                </select>
+                
+								<label>Link da notícia</label>
+								<input type="text" name="link" id="news-link">
+
+								<input id="NovaNoticia" type="submit" value="Adicionar nova notícia">
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Edição -->
+
+    <div id="modalEdit" class="modal">
+
+      <div class="modal-content">
+          <form id="Newsform-edit">
+              <span id="close-button-edit" class="close-button">X</span>
+
+              <label>Link da imagem</label>
+              <input type="text" name="image" id="news-image-edit">
+              
+              <label>Titulo</label>
+              <input type="text" name="title" id="news-title-edit">
+              
+              <label>Descrição</label>
+              <input type="text" name="desc" id="news-desc-edit">
+              
+              <label>Tema</label>
+              <select id="news-theme-edit">
+                <option value="Esportes" selected>Esportes</option>
+                <option value="Politica">Politica</option>
+                <option value="Entretenimento">Entretenimento</option>
+                <option value="Famosos">Famosos</option>
+              </select>
+              
+              <label>Link da notícia</label>
+              <input type="text" name="link" id="news-link-edit">
+
+              <input id="EditarNoticia" type="submit" value="Editar notícia">
+          </form>
+      </div>
+  </div>
+
+    <script src="news.script.js"></script>
+</body>
+</html>
