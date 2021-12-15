@@ -22,22 +22,22 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode](http
 
 ### 🎲 Rodando o Back End (servidor)
 
-# Clone este repositório
+- Clone este repositório
 
-# Acesse a pasta do projeto no terminal/cmd
+- Acesse a pasta do projeto no terminal/cmd
 $ cd casperbot
 
-# Instale as dependências
+- Instale as dependências
 $ npm install
 
-# Inicie com o comando personalizado(utiliza nodemon)
+- Inicie com o comando personalizado(utiliza nodemon)
 $ npm run devstart
 
-# O servidor iniciará na porta:3000 - acesse <http://localhost:3000>
+- O servidor iniciará na porta:3000 - acesse <http://localhost:3000>
 
 ### 🔅 Rodando o Front End (Centro de Notícias)
 
-# Com o repositório já clonado, como foi feito utilizando javascript puro, é possível abri-lo em um live server
+- Com o repositório já clonado, como foi feito utilizando javascript puro, é possível abri-lo em um live server
 -> Utilizei a extensão live server do VSCode, abrindo na porta 5500
 
 ### 🛠 Tecnologias
