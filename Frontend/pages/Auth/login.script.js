@@ -24,7 +24,7 @@ async function Login(e){
         sessionStorage.setItem('token', result.data);
         alert('Usuário logado!');
 	    // -------------------- rodando em um live server local ----------------
-		location.href = 'http://localhost:5500/casperbot/pages/News/news.html'
+		location.href = 'http://localhost:5500/News/news.html'
     }else{
         alert(result.error)
     }
