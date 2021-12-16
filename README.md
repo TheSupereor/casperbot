@@ -2,7 +2,7 @@
 <p align="center">Frontend, server e conexão com banco de dados!</p>
 
 <h4 align="center"> 
- 💥 Finalizado 💥
+ 💥 Em construção 💥
 </h4>
 
 ## ✅ Funcionalidades
