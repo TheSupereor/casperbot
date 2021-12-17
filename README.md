@@ -62,6 +62,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Cors](https://www.npmjs.com/package/cors)
 - [JWT](https://jwt.io)
 - [BCrypt](https://www.npmjs.com/package/bcryptjs)
+- [DialogFlow](https://dialogflow.cloud.google.com)
 
 Além dessas, em outra parte do projeto, utilizamos o [Glitch](glitch.com) para hostear nosso fulfillment do bot do facebook, bem como o [DialogFlow](https://dialogflow.cloud.google.com). 
 
