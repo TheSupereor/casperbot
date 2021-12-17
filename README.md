@@ -13,6 +13,7 @@
 - [x] Cadastro de notícias
 - [x] Exclusão de notícias
 - [x] Edição de notícias
+- [x] Responder interações dos usuários
 
 ## 🗯 Pré-requisitos
 
