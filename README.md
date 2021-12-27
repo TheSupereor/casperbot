@@ -2,8 +2,10 @@
 <p align="center">Frontend, server e conexão com banco de dados!</p>
 
 <h4 align="center"> 
- 💥 Em construção 💥
+ 💥 Finalizado 💥
 </h4>
+
+![image](https://user-images.githubusercontent.com/55772578/147512348-19023e7e-6852-458e-a620-04ad29a24c9d.png)
 
 ## ✅ Funcionalidades
 
